@@ -3,7 +3,6 @@ import './Rewards.css';
 
 export default function Rewards() {
   return (
-
     <div className="card custom-card"> 
       <div className="card-header custom-header"> 
         Rewards
@@ -17,5 +16,6 @@ export default function Rewards() {
         </blockquote>
       </div>
     </div>
+  
   );
 }

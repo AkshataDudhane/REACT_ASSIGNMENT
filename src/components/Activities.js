@@ -16,9 +16,9 @@ export default function Activities({updateTotalPurchaseCount}) {
       });
 
       setPurchases(updatedPurchases);
-
-
-        await axios.put(`${URL}/${purchaseId}`, { count: purchases.find(p => p.id === purchaseId).count + 1 });
+      
+      await axios.put(`${URL}/${purchaseId}`, { 
+        count: purchases.find(p => p.id === purchaseId).count + 1 });
         const newCount = updatedPurchases.reduce((acc, purchase) => acc + purchase.count, 0);
         updateTotalPurchaseCount(newCount);
     } catch (error) {
@@ -35,14 +35,13 @@ export default function Activities({updateTotalPurchaseCount}) {
         console.error('Error fetching data:', error);
       }
     };
-
     fetchPurchases();
   }, []);
 
 
   return (
     <>
-    <div>
+    <div className='Activity'>
       <h2 style={{textAlign:'center'}}>Purchases</h2>
       <table className={styles.table}>
         <thead>
