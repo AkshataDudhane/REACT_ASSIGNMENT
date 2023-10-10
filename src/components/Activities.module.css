@@ -1,0 +1,29 @@
+.table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: 60px;
+  background-color: rgb(255, 255, 255);
+}
+
+.table th, .table td {
+  border: 2px solid #ffffff;
+  padding: 20px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #ffe9e9;
+}
+
+.table tbody tr:nth-child(odd) {
+  background-color: #f5ebeb;
+}
+
+.table tbody tr:hover {
+  background-color: #faefef;
+}
+
+.h2 {
+  text-align: center;
+}

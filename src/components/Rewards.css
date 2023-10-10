@@ -1,0 +1,27 @@
+
+.custom-card {
+  width: 300px;
+  margin: 20px auto; /* Center horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  border: 1px solid #ccc;
+  background-color: #f8b9b9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.custom-header {
+  background-color: #f59d9d;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.custom-footer {
+  background-color: #e6d7d7;
+  color: #0c0c0c;
+  padding: 5px;
+  border-top: 1px solid #999999;
+}
+
